@@ -27,9 +27,9 @@ THEN the password is either displayed in an alert or written to the page
 
 ## Demo
 
-<img src='./Develop/assets/Capture.JPG'/>
+<img src='./assets/Capture.JPG'/>
 
-<img src='./Develop/assets/generatedpswd.JPG'/>
+<img src='./assets/generatedpswd.JPG'/>
 
 Walkthrough
 https://youtu.be/k2lrqmFLZ7s
