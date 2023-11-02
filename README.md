@@ -1,4 +1,4 @@
-# Password Generator Starter Code
+# Java Script Password Generator
 
 ## User Story
 
@@ -31,6 +31,7 @@ THEN the password is either displayed in an alert or written to the page
 
 <img src='./Develop/assets/generatedpswd.JPG'/>
 
+Walkthrough
 https://youtu.be/k2lrqmFLZ7s
 
 
