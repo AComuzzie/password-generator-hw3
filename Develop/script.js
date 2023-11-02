@@ -6,10 +6,12 @@ var generateBtn = document.querySelector("#generate");
 
 function generatePassword() {
 
-  var uppercaseArray = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
-  var lowercaseArray = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o",  "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+  var upperCaseArray = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
+  var lowerCaseArray = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o",  "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
   var specialCharArray = ["@", "#", "$", "%", "^", "&", "*", "(", ")", "-", "_", "=", "+"];
   var numArray = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
+  var minLength = 8;
+  var maxLength = 128;
 
   var resultArray = [];
   var userArray = [];
@@ -26,20 +28,33 @@ function generatePassword() {
   }
 
   if (uppercase) {
-    resultArray = resultArray.concat(uppercaseArray);
+    resultArray = resultArray.concat(upperCaseArray);
   }
 
   if (lowercase) {
-    resultArray = resultArray.concat(lowercaseArray);
+    resultArray = resultArray.concat(lowerCaseArray);
   }
 
   if (specialChar) {
     resultArray = resultArray.concat(specialCharArray);
   }
+
+  if (resultArray.length === 0) {
+    alert ("Please select at least one character type");
+    return;
+  }
+
+  var generatePassword = "";
+
+  for (var i = 0; i < passwordLength; i++) {
+    generatePassword = generatePassword + resultArray[Math.floor(Math.random() * resultArray.length)];
+  }
+
+  return generatePassword;
+
+
   console.log(resultArray)
 }
-
-
 
 // Write password to the #password input
 function writePassword() {
