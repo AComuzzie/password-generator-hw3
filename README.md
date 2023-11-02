@@ -25,9 +25,14 @@ WHEN the password is generated
 THEN the password is either displayed in an alert or written to the page
 
 
-## Mock-Up
+## Demo
 
-<img src="./Develop/assets/pswdmockup.JPG" alt="screenshot of homepage" />
+<img src='./Develop/assets/Capture.JPG'/>
+
+<img src='./Develop/assets/generatedpswd.JPG'/>
+
+https://youtu.be/k2lrqmFLZ7s
+
 
 ## Links 
 https://github.com/AComuzzie/password-generator-hw3
